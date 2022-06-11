@@ -47,7 +47,6 @@ fastify.get('/redirect-chain', {
  */
 const start = async () => {
   try {
-    console.log(process.env)
     console.log(`starting server on ${process.env.PORT}`)
     await fastify.listen({ port: process.env.PORT || 3000, host: '0.0.0.0' })
   } catch (err) {
